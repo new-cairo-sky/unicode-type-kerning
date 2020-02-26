@@ -620,3 +620,12 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.about {
+  font-family: Helvetica, sans-serif;
+}
+.about__title {
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+
+}
