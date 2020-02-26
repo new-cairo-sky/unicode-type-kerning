@@ -1,11 +1,13 @@
 # Experimental Unicode Type Kerning
 
 See it live at https://new-cairo-sky.github.io/unicode-type-kerning/
-      
+
 ## How to Use
       
 Set the cursor between the letters you want to kern. Use the keys
 `ctrl-.` to increase kerning. Use `ctrl-,` to decrease it.
+
+The text may then be copy/pasted directly into your html source without loosing the type-setting. 
 
 ## How it works
 
@@ -24,6 +26,10 @@ instance, Chrome's Find tool correctly ignores the character for in-page
 searches, while Firefox does not match words that contain the hidden
 glyph.
 
+## Why?
+
+Text set using this technique can / may / has a chance of working across different environments. ie. The same text should, in theory, retain its kerning in Html, rich text, or page-layout software and doesn't require any markup language. In the past, most web kerning solutions have used a combination of JS, CSS, and many `span` elements. This approach just uses lots of Unicode characters and may be a lighter-weight and easier to parse approach for large bodies of text. 
+
 ## Limitations
 
 This proof-of-concept currently only supports positive kerning. However,
@@ -31,3 +37,6 @@ by using a negative letter-spacing value, negative kerning is possible.
 Future updates may implement a combination of U+180E in combination with
 a positive white-space glyph such as U+202F to enable both positive and
 negative type kerning.
+
+
+T᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎h᠎᠎᠎᠎e qu᠎᠎᠎᠎i᠎᠎᠎᠎c᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎k br᠎᠎᠎᠎ow᠎᠎᠎᠎n f᠎᠎᠎᠎᠎᠎᠎᠎ox jump᠎᠎᠎᠎s o᠎᠎᠎᠎v᠎᠎᠎᠎e᠎᠎᠎᠎r t᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎he la᠎᠎᠎᠎z᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎y d᠎᠎᠎᠎og.

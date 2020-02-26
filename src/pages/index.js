@@ -35,6 +35,17 @@ const IndexPage = () => (
         searches, while Firefox does not match words that contain the hidden
         glyph.
       </p>
+
+      <h3 className="about__title">Why?</h3>
+      <p>
+        Text set using this technique can / may / has a chance of working across
+        different environments. ie. The same text should, in theory, retain its
+        kerning in Html, rich text, or page-layout software and doesn't require
+        any markup language. In the past, most web kerning solutions have used a
+        combination of JS, CSS, and many `span` elements. This approach just
+        uses lots of Unicode characters and may be a lighter-weight and easier
+        to parse approach for large bodies of text.
+      </p>
       <h3>Limitations</h3>
       <p>
         This proof-of-concept currently only supports positive kerning. However,
