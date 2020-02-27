@@ -3,11 +3,11 @@
 See it live at https://new-cairo-sky.github.io/unicode-type-kerning/
 
 ## How to Use
-      
+
 Set the cursor between the letters you want to kern. Use the keys
 `ctrl-.` to increase kerning. Use `ctrl-,` to decrease it.
 
-The text may then be copy/pasted directly into your html source without loosing the type-setting. 
+The text may then be copy/pasted directly into your html source without loosing the type-setting.
 
 ## How it works
 
@@ -19,7 +19,6 @@ properties. The result is a variable-width space that is equal to the
 value of the letter-spacing css property. Additionally, it is a
 non-breaking character and will not result in line-wrapping.
 
-
 It probably has the added benefit of destroying SEO since some string
 parsers do not correctly interpret word-breaks bounded by U+180E. For
 instance, Chrome's Find tool correctly ignores the character for in-page
@@ -28,15 +27,14 @@ glyph.
 
 ## Why?
 
-Text set using this technique can / may / has a chance of working across different environments. ie. The same text should, in theory, retain its kerning in Html, rich text, or page-layout software and doesn't require any markup language. In the past, most web kerning solutions have used a combination of JS, CSS, and many `span` elements. This approach just uses lots of Unicode characters and may be a lighter-weight and easier to parse approach for large bodies of text. 
+Text set using this technique can / may / has a chance of working across different environments. ie. The same text should, in theory, retain its kerning in Html, rich text, or page-layout software and doesn't require any markup language. In the past, most web kerning solutions have used a combination of JS, CSS, and many `span` elements. This approach just uses lots of Unicode characters and may be a lighter-weight and easier to parse approach for large bodies of text.
 
 ## Limitations
 
 This proof-of-concept currently only supports positive kerning. However,
 by using a negative letter-spacing value, negative kerning is possible.
-Future updates may implement a combination of U+180E in combination with
+Future updates may implement a combination of U+180E with
 a positive white-space glyph such as U+202F to enable both positive and
 negative type kerning.
-
 
 T᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎h᠎᠎᠎᠎e qu᠎᠎᠎᠎i᠎᠎᠎᠎c᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎k br᠎᠎᠎᠎ow᠎᠎᠎᠎n f᠎᠎᠎᠎᠎᠎᠎᠎ox jump᠎᠎᠎᠎s o᠎᠎᠎᠎v᠎᠎᠎᠎e᠎᠎᠎᠎r t᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎he la᠎᠎᠎᠎z᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎y d᠎᠎᠎᠎og.

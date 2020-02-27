@@ -50,9 +50,9 @@ const IndexPage = () => (
       <p>
         This proof-of-concept currently only supports positive kerning. However,
         by using a negative letter-spacing value, negative kerning is possible.
-        Future updates may implement a combination of U+180E in combination with
-        a positive white-space glyph such as U+202F to enable both positive and
-        negative type kerning.
+        Future updates may implement a combination of U+180E with a positive
+        white-space glyph such as U+202F to enable both positive and negative
+        type kerning.
       </p>
     </div>
   </Layout>
