@@ -1,11 +1,11 @@
 module.exports = {
   pathPrefix: "/unicode-type-kerning",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Unicode Type Kerning`,
+    description: `A novel approach to web type kerning without html.`,
+    author: `@new-cairo-sky`,
   },
-  
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

@@ -27,14 +27,12 @@ glyph.
 
 ## Why?
 
-Text set using this technique can / may / has a chance of working across different environments. ie. The same text should, in theory, retain its kerning in Html, rich text, or page-layout software and doesn't require any markup language. In the past, most web kerning solutions have used a combination of JS, CSS, and many `span` elements. This approach just uses lots of Unicode characters and may be a lighter-weight and easier to parse approach for large bodies of text.
+Text set using this technique can / may / has a chance of working across
+different environments. ie. The same text should, in theory, retain its
+kerning in Html, rich text, or page-layout software and doesn't require
+any markup language. In the past, most web kerning solutions have used a
+combination of JS, CSS, and lots of `span` elements. On the
+other hand, this approach just uses a bunch of Unicode characters that
+are usually retained between copy/paste cycles in various contexts.
 
 ## Limitations
-
-This proof-of-concept currently only supports positive kerning. However,
-by using a negative letter-spacing value, negative kerning is possible.
-Future updates may implement a combination of U+180E with
-a positive white-space glyph such as U+202F to enable both positive and
-negative type kerning.
-
-T᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎h᠎᠎᠎᠎e qu᠎᠎᠎᠎i᠎᠎᠎᠎c᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎k br᠎᠎᠎᠎ow᠎᠎᠎᠎n f᠎᠎᠎᠎᠎᠎᠎᠎ox jump᠎᠎᠎᠎s o᠎᠎᠎᠎v᠎᠎᠎᠎e᠎᠎᠎᠎r t᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎he la᠎᠎᠎᠎z᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎᠎y d᠎᠎᠎᠎og.
